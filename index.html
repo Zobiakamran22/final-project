@@ -1,0 +1,1455 @@
+<!doctype html>
+ <html lang="English">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
+    
+   <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Exo+2:ital,wght@0,300;1,100&family=Kalam:wght@300;400;700&family=Oleo+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://127.0.0.1:5500/lightbox.css">
+   <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <div class="header">
+
+        
+        <div class="contact-wraper">
+            <div class="container">
+                <div class="contact-bar  ">
+                    <ul>
+                     <li class="me-4"><a href="tel:03134567854"><i class="bi bi-telephone-fill "></i><span class="d-none d-inline-block">+88091924567</span></a></li>
+                     <li><a href=""><i class="bi bi-alarm-fill"></i> </i><span class="d-none d-inline-block"> Mon to Fri 8:00-12:00</span></a></li>
+                    
+                    </ul>
+    
+                    <ul>
+                     <li><a href=""data-bs-toggle="modal" data-bs-target="#loginModal"><i class="bi bi-person-circle me-1 "></i><span class="d-none d-inline-block ">Login /</span></a></li>
+                     <li><a href=""data-bs-toggle="modal" data-bs-target="#signupModal"><i class="bi bi-person-check-fill"></i><span class="d-none d-inline-block">Register</span></a></li>
+
+                    </ul>
+    
+                 </div> <!-- /.contact-bar -->
+    
+
+            </div><!-- /.container -->
+            
+
+
+        </div> <!-- /.contact-wraper -->
+
+        
+
+    </div><!-- /.header -->
+
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="loginModalLabel">Login page</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+            
+          </form>
+
+
+        
+          </div>
+         
+      </div>
+    </div>
+   </div>
+    
+
+
+
+
+   <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="signupModalLabel">Sign up page</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Password</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-">
+              <label for="inputAddress" class="form-label">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-">
+              <label for="inputAddress2" class="form-label">Address 2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>Lorem</option>
+                <option>ipsum</option>
+                <option>Lorem</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+          </form>
+
+
+        
+          </div>
+         
+      </div>
+    </div>
+   </div>
+   
+
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+         <a class="navbar-brand" href="#"><img src="assets/imgs/edu_logo-removebg-preview.png" alt=""></a>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="cartoon">
+                <a class="nav-link active " aria-current="page" href="#">Home</a>
+    
+              </li>
+    
+              <div class="pogo">
+               
+               
+                <div class="text-center">
+                  <img src="assets/imgs/home kids.jpg" class="rounded" alt="...">
+                </div>
+    
+    
+    
+               <h2>
+                <span>Start Here</span></h2>
+                <h4>Welcome to Newy with Kids!</h4>
+                <p>Created by a local mum Reena Bilen with a team of contributors, Newy with Kids keeps you up to date with what’s happening in the Newcastle, NSW region. It’s your guide to family-friendly attractions, activities and events in Newcastle, Lake Macquarie & the Hunter.</p>
+               
+                 
+    
+                 
+              </div>
+              <!-- /home-layer -->
+    
+              <li class="aboutlayer">
+                <a class="nav-link active" aria-current="page" href="#">About</a>
+              </li>
+                <div class="about-section">
+                  <img src="assets/imgs/about child.jpg" alt="">
+    
+                  <div class="first-line">
+    
+                    <img src="assets/imgs/about logo.png" alt="">
+                   
+                    
+                   
+      
+    
+                  </div> <!-- /.first-line -->
+                 
+                    
+    
+                 
+                   
+    
+                  <h2>About us</h2>
+                  <p>In 1974 Mrs. Mussarat Salamat, a pioneer in early childhood education in Pakistan, established the Kids Kampus brand with a simple vision to create a world class pre-school in Lahore. Since its inception, Kids Kampus has delivered on its unwavering commitment to provide the very best in early childhood education. The success of our in-house developed curriculum has resulted in such an increase in student population year after year that it spawned the creation of SICAS, a comprehensive network of affiliated elementary and secondary schools across Lahore which provide top quality education from pre-school to A levels.</p>
+                </div><!-- /.aboutsection -->   
+                
+                
+    
+                <li class="teacher">
+                  <a class="nav-link active" aria-current="page" href="#">Teachers</a>
+                </li>
+      
+                <div class="teacher-section">
+                  <img src="assets/imgs/T1.jpg" class="rounded float-start" alt="...">
+                  <img src="assets/imgs/T2.jpeg" class="rounded float-end" alt="...">
+                  <img src="assets/imgs/T3.jpg" class="rounded mx-auto d-block" alt="...">
+                  <img src="assets/imgs/T4.jpg" class="rounded float-start" alt="...">
+                  <img src="assets/imgs/T5.jpg" class="rounded float-end" alt="...">
+                  <img src="assets/imgs/T6.jpg" class="rounded float-start" alt="...">
+                </div><!-- /.teacher-section--> 
+    
+    
+                <li class="party">
+                  <a class="nav-link active" aria-current="page" href="#">Event</a>
+                </li>
+      
+      
+                <div class="party-layer">
+                  <div class="card text mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Events</div>
+                    <div class="card-body">
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quis quos eos harum nemo vitae aut provident illo tempore magni!adipisicing elit. Quae neque libero cupiditate reiciendis quod. Sed atque perspiciatis optio omnis. Fugiat esse earum optio eligendi placeat repudiandae nemo alias quisquam, quo hic odio assumenda recusandae magnam eius architecto dolorum rem explicabo.</p>
+                    </div>
+                  </div>
+                  
+      
+                </div><!-- /.party -->
+    
+    
+    
+                <li class="contact">
+                  <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                </li>
+    
+    
+                <div class="contact-list">
+    
+                  <dl class="row">
+                    <dt class="col-sm-3"> Details</dt>
+                    <dd class="col-sm-9">If you have an enquiry, please contact the Academy Office at:
+                      Oasis Academy Enfield
+                      9 Kinetic Crescent
+                      Innova Park
+                      Mollison Avenue
+                      Enfield
+                      EN3 7XH
+                      
+                      Tel: 01992 655 400
+                      
+                      Email: info@oasisenfield.org  </dd>
+    
+                   
+                  
+                    <dt class="col-sm-3">General Enquiries:</dt>
+                    <dd class="col-sm-9">
+                      <p>For general enquiries please contact the Principal's PA on 01992 655 400 or via email: Shenel.Tharani@oasisenfield.org.
+    
+                        If you would like to contact the Special Educational Needs Co-ordinator, please address correspondence to Ms Dennis either via the Academy address or by telephone or email.
+                        
+                        Tel: 01992 655 400
+                        
+                        
+                        
+                        Should you require any further information on this website, including issues regarding accessibility and paper copies, please do not hesitate to contact info@oasisenfield.org</p>
+                      <p>Email: <a href="">www.Dennis@oasisenfield.org</a></p>
+                    </dd>
+                  
+                    <dt class="col-sm-3">Contact Us</dt>
+                    <dd class="col-sm-9">Oasis Community Learning
+                      Interchurch House
+                      35-41 Lower Marsh
+                      London
+                      SE1 7RL
+                      
+                      Tel: 020 7921 4200
+                      Website: oasiscommunitylearning.org/about-us/contact-us</dd>
+                  
+                    
+                  </dl>
+    
+                </div>
+                <!-- /.contact-list -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+              <li class="course">
+                <a class="nav-link active" aria-current="page" href="#">Course</a>
+              </li>
+    
+    
+              <div class="course-section">
+    
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                       <h5> Art & Painting Camp</h5>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">This art and craft camp course in Lahore makes the students capable of expressing their inner artist by making different crafts. This course will enhance their fine motor skills, which can convert their imagination into something productive.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <h5>Junior Robotics Camp 2024</h5>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">This Junior Robotics Camp for kids in Lahore is designed to make our kids more familiar with technology at an early age. Robotics is a fun learning course curriculum, and at their initial stage, their minds are sharper and more intellectually strong to absorb the things. This course will help them boost their knowledge of technology.
+    
+                        PNY Genius wants to make the kids more capable at an early age, and through this Junior Robotics Camp in Lahore, they will learn to automate the challenges. Through this course, they will also learn problem-solving and programming skills that will prepare them for a professional career.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <h5>STEAM Winter Camp for one week</h5>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">STEAM Winter Camp for kids
+    
+                        Our winter camp instructors have experiences in STEAM, and we substitute display time with real-life skills and utensils to help campers gain an understanding that continues for a lifetime. The STEAM Winter Camp for Kids is a place where campers develop their skills, outlooks, and knowledge through design challenges, problem-solving activities, and group tasks.
+                        
+                        Kids will discover their creative side by designing and building toys, games, gadgets, etc. This winter, we are opening up our authentic youth-intensive marketplace so we can give young people stimulating ways to make remarkable projects with our hand utensils, fuel intrusive minds, and stimulate their creativity.</div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                
+               
+                  
+    
+               
+                 
+    
+                
+              </div><!-- /.course-section -->  
+    
+            
+            </ul>
+              
+          </div>
+        </div>
+       </nav>
+    
+
+    
+   <div class="section-one">
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+     
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/imgs/kids1.jpg" class="d-block w-100" alt="">
+            <div class="carousel-caption">
+              <h5>
+                <span>kids school</span> <br>
+                <span>perfect start</span><br>
+                <span>for your child</span>
+              </h5>
+              
+             <button class="caption-butn">learn more</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/imgs/scale_1200.jpeg" class="d-block w-100 " alt="...">
+            <div class="carousel-caption  d-md-block">
+              <h5>
+                <span>kids school</span> <br>
+                <span>perfect start</span><br>
+                <span>for your child</span>
+              </h5>
+              
+             <button class="caption-butn">learn more</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/imgs/3357.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption  d-md-block">
+              <h5>
+                <span>kids school</span> <br>
+                <span>perfect start</span><br>
+                <span>for your child</span>
+              </h5>
+              
+             <button class="caption-butn">learn more</button>
+
+             
+            </div>
+          </div>
+        </div>
+
+
+       
+
+      
+      
+     
+    </div>
+   </div><!-- /.section-one -->
+
+
+   <div class="our-service py-5">
+   <div class="container">
+    <div class="section-lead text-center">
+      <h4>our activites</h4>
+      <li class=" overline ">
+        
+        <div class="right"></div>
+        <div class="icone"><i class="ri-graduation-cap-fill"></i></div>
+        
+        <div class="left"></div>
+      </li>
+      <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit sit amet consectetur adipisicing elit.</p>
+
+    </div><!-- /.section-lead -->
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-4">
+       <div class="service-card text-center">
+        <img src="assets/imgs/teacher.png" alt="">
+        <h4>our tearches</h4>
+       <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit sit amet consectetur adipisicing elit.</p>
+       </div><!-- /.service-card -->
+
+      </div><!-- /.col -->
+
+
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-4">
+        <div class="service-card text-center">
+          <img src="assets/imgs/trophy.png" alt="">
+         <h4>sports</h4>
+         <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit sit amet consectetur adipisicing elit.</p>
+        </div><!-- /.service-card -->
+ 
+       </div><!-- /.col -->
+
+
+       <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-4">
+        <div class="service-card text-center">
+          <img src="assets/imgs/bus.png" alt="">
+        
+         <h4>bus service</h4>
+         <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit sit amet consectetur adipisicing elit.</p>
+        </div><!-- /.service-card -->
+ 
+       </div><!-- /.col -->
+
+
+
+       <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-4">
+        <div class="service-card text-center">
+          <img src="assets/imgs/teacher (1).png" alt="">
+         <h4>music classes</h4>
+         <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit sit amet consectetur adipisicing elit.</p>
+        </div><!-- /.service-card -->
+ 
+       </div><!-- /.col -->
+
+
+       <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-4">
+        <div class="service-card text-center">
+          <img src="assets/imgs/coding.png" alt="">
+         <h4>language</h4>
+         <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit sit amet consectetur adipisicing elit.</p>
+        </div><!-- /.service-card -->
+ 
+       </div><!-- /.col -->
+
+
+       <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-4">
+        <div class="service-card text-center">
+          <img src="assets/imgs/food.png" alt="">
+         <h4>custom food</h4>
+        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit sit amet consectetur adipisicing elit.</p>
+        </div><!-- /.service-card -->
+ 
+       </div><!-- /.col -->
+
+    </div> <!-- /.row -->
+
+
+   </div><!-- /.container -->
+   </div><!-- /.our-service -->
+
+
+
+   
+
+
+    <div class="gallery-section">
+
+      <div class="section-gallery">
+        <div class="our-service py-5"> 
+          <div class="container">
+           <div class="section-lead text-center">
+            <h4>GALLERY</h4>
+            <li class=" overline ">
+              
+              <div class="right"></div>
+              <div class="icone"><i class="ri-graduation-cap-fill"></i></div>
+              
+              <div class="left"></div>
+              </li>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit sit amet consectetur adipisicing elit.</p>
+    
+          <div class="container">
+        </div><!-- our-service py-5-->
+    
+             <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+               <li class="nav-item" role="presentation">
+                 <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true">ALL</button>
+               </li>
+               <li class="nav-item" role="presentation">
+                 <button class="nav-link" id="pills-creative-tab" data-bs-toggle="pill" data-bs-target="#pills-creative" type="button" role="tab" aria-controls="pills-creative" aria-selected="false">CREATIVE</button>
+               </li>
+               <li class="nav-item" role="presentation">
+                 <button class="nav-link" id="pills-sports-tab" data-bs-toggle="pill" data-bs-target="#pills-sports" type="button" role="tab" aria-controls="pills-sports" aria-selected="false">SPORTS</button>
+               </li>
+    
+               <li class="nav-item" role="presentation">
+                 <button class="nav-link" id="pills-class-tab" data-bs-toggle="pill" data-bs-target="#pills-class" type="button" role="tab" aria-controls="pills-class" aria-selected="false">CLASS</button>
+               </li>
+    
+    
+               <li class="nav-item" role="presentation">
+                 <button class="nav-link" id="pills-video-tab" data-bs-toggle="pill" data-bs-target="#pills-video" type="button" role="tab" aria-controls="pills-video" aria-selected="false">VIDEO</button>
+               </li>
+           
+             </ul>
+             <div class="tab-content" id="pills-tabContent">
+               <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab" tabindex="0">
+    
+                 <div class="grid-parent">
+                  
+                   <div class="grid-item grid-box-1">
+    
+                     <a href=""><img src="assets/imgs/box1.jpg" alt=""></a>
+                    
+                     
+                    
+                     <div class="over-layer">
+    
+                       <a href="assets/imgs/box1.jpg" data-lightbox="models" data-title="Caption1"><i class="bi bi-plus-square"></i></a>
+    
+                     </div><!-- /.over-layer -->
+                      
+                   </div><!-- /.grid-item -->
+                   <div class="grid-item grid-box-2">
+                     <a href=""><img src="assets/imgs/box3.jpg" alt=""></a>
+                     <div class="over-layer">
+                      
+                       <a href="assets/imgs/box3.jpg" data-lightbox="models" data-title="Caption2"><i class="bi bi-plus-square"></i></a>
+                      </div><!-- /.over-layer -->
+                   </div><!-- /.grid-item -->
+                   <div class="grid-item grid-box-3">
+                     <a href=""><img src="assets/imgs/box4.jpg" alt=""></a>
+                     <div class="over-layer">
+                      
+                       <a href="assets/imgs/box4.jpg" data-lightbox="models" data-title="Caption3"><i class="bi bi-plus-square"></i></a>
+                      </div><!-- /.over-layer -->
+                   </div><!-- /.grid-item -->
+                   <div class="grid-item grid-box-4">
+                     <a href=""><img src="assets/imgs/box6.jpg" alt=""></a>
+                     <div class="over-layer">
+                      
+                       <a href="assets/imgs/box6.jpg" data-lightbox="models" data-title="Caption4"><i class="bi bi-plus-square"></i></a>
+                      </div><!-- /.over-layer -->
+                   </div><!-- /.grid-item -->
+                   <div class="grid-item grid-box-5">
+                     <a href=""><img src="assets/imgs/box4.jpg" alt=""></a>
+                     <div class="over-layer">
+                      
+                       <a href="assets/imgs/box4.jpg" data-lightbox="models" data-title="Caption5"><i class="bi bi-plus-square"></i></a>
+                      </div><!-- /.over-layer -->
+                   </div><!-- /.grid-item -->
+                   <div class="grid-item grid-box-6">
+                     <a href=""><img src="assets/imgs/box5.jpg" alt=""></a>
+                     <div class="over-layer">
+                      
+                       <a href="assets/imgs/box5.jpg" data-lightbox="models" data-title="Caption6"><i class="bi bi-plus-square"></i></a>
+                      </div><!-- /.over-layer -->
+                   </div><!-- /.grid-item -->
+    
+                 </div><!-- /.grid-parent -->
+    
+    
+    
+    
+    
+    
+               </div>
+               <div class="tab-pane fade" id="pills-creative" role="tabpanel" aria-labelledby="pills-creative-tab" tabindex="0">
+    
+    
+                 <div class="grid-parent">
+                  
+                   <div class="grid-item grid-box-1">
+                     <a href=""><img src="assets/imgs/crative1.jpg" alt=""></a>
+                    
+                     <div class="over-layer">
+                      
+                       <a href="assets/imgs/crative1.jpg" data-lightbox="models" data-title="Caption1"><i class="bi bi-plus-square"></i></a>
+                      </div><!-- /.over-layer -->
+                      
+                   </div><!-- /.grid-item -->
+                   <div class="grid-item grid-box-2">
+                     <a href=""><img src="assets/imgs/crative2.jpg" alt=""></a>
+                     <div class="over-layer">
+                      
+                       <a href="assets/imgs/crative2.jpg" data-lightbox="models" data-title="Caption2"><i class="bi bi-plus-square"></i></a>
+                      </div><!-- /.over-layer -->
+                   </div><!-- /.grid-item -->
+                   <div class="grid-item grid-box-3">
+                     <a href=""><img src="assets/imgs/crative3.jpg" alt=""></a>
+                     <div class="over-layer">
+                      
+                       <a href="assets/imgs/crative3.jpg" data-lightbox="models" data-title="Caption3"><i class="bi bi-plus-square"></i></a>
+                      </div><!-- /.over-layer -->
+                   </div><!-- /.grid-item -->
+                   <div class="grid-item grid-box-4">
+                     <a href=""><img src="assets/imgs/crative4.png" alt=""></a>
+                     <div class="over-layer">
+                      
+                       <a href="assets/imgs/crative4.png" data-lightbox="models" data-title="Caption4"><i class="bi bi-plus-square"></i></a>
+                      </div><!-- /.over-layer -->
+                   </div><!-- /.grid-item -->
+                   <div class="grid-item grid-box-5">
+                     <a href=""><img src="assets/imgs/crative5.jpg" alt=""></a>
+                     <div class="over-layer">
+                      
+                       <a href="assets/imgs/crative5.jpg" data-lightbox="models" data-title="Caption5"><i class="bi bi-plus-square"></i></a>
+                      </div><!-- /.over-layer -->
+                   </div><!-- /.grid-item -->
+                   <div class="grid-item grid-box-6">
+                     <a href=""><img src="assets/imgs/crative6.jpg" alt=""></a>
+                     <div class="over-layer">
+                      
+                       <a href="assets/imgs/crative6.jpg" data-lightbox="models" data-title="Caption6"><i class="bi bi-plus-square"></i></a>
+                      </div><!-- /.over-layer -->
+                   </div><!-- /.grid-item -->
+    
+                 </div><!-- /.grid-parent -->
+    
+    
+    
+               </div>
+               <div class="tab-pane fade" id="pills-sports" role="tabpanel" aria-labelledby="pills-sports-tab" tabindex="0">
+    
+    
+                 <div class="grid-parent">
+                  
+                   <div class="grid-item grid-box-1">
+                     <a href=""><img src="assets/imgs/sport1.jpg" alt=""></a>
+                    
+                     <div class="over-layer">
+                      
+                       <a href="assets/imgs/sport1.jpg" data-lightbox="models" data-title="Caption1"><i class="bi bi-plus-square"></i></a>
+                      </div><!-- /.over-layer -->
+                      
+                   </div><!-- /.grid-item -->
+                   <div class="grid-item grid-box-2">
+                     <a href=""><img src="assets/imgs/sport2.jpg" alt=""></a>
+                     <div class="over-layer">
+                      
+                       <a href="assets/imgs/sport2.jpg" data-lightbox="models" data-title="Caption2"><i class="bi bi-plus-square"></i></a>
+                      </div><!-- /.over-layer -->
+                   </div><!-- /.grid-item -->
+                   <div class="grid-item grid-box-3">
+                     <a href=""><img src="assets/imgs/sport3.jpg" alt=""></a>
+                     <div class="over-layer">
+                      
+                       <a href="assets/imgs/sport3.jpg" data-lightbox="models" data-title="Caption3"><i class="bi bi-plus-square"></i></a>
+                      </div><!-- /.over-layer -->
+                   </div><!-- /.grid-item -->
+                   <div class="grid-item grid-box-4">
+                     <a href=""><img src="assets/imgs/sportfor.webp" alt=""></a>
+                     <div class="over-layer">
+                      
+                       <a href="assets/imgs/sportfor.webp" data-lightbox="models" data-title="Caption4"><i class="bi bi-plus-square"></i></a>
+                      </div><!-- /.over-layer -->
+                   </div><!-- /.grid-item -->
+                   <div class="grid-item grid-box-5">
+                     <a href=""><img src="assets/imgs/sport5.webp" alt=""></a>
+                     <div class="over-layer">
+                      
+                       <a href="assets/imgs/sport5.webp" data-lightbox="models" data-title="Caption5"><i class="bi bi-plus-square"></i></a>
+                      </div><!-- /.over-layer -->
+                   </div><!-- /.grid-item -->
+                   <div class="grid-item grid-box-6">
+                     <a href=""><img src="assets/imgs/sports6.jpeg" alt=""></a>
+                     <div class="over-layer">
+                      
+                       <a href="assets/imgs/sports6.jpeg" data-lightbox="models" data-title="Caption6"><i class="bi bi-plus-square"></i></a>
+                      </div><!-- /.over-layer -->
+                   </div><!-- /.grid-item -->
+    
+                 </div><!-- /.grid-parent -->
+    
+    
+    
+               </div>
+               <div class="tab-pane fade" id="pills-class" role="tabpanel" aria-labelledby="pills-class-tab" tabindex="0">
+    
+                 <div class="grid-parent">
+                  
+                   <div class="grid-item grid-box-1">
+                     <a href=""><img src="assets/imgs/box1.jpg" alt=""></a>
+                    
+                     <div class="over-layer">
+                      
+                       <a href="assets/imgs/box1.jpg" data-lightbox="models" data-title="Caption1"><i class="bi bi-plus-square"></i></a>
+                      </div><!-- /.over-layer -->
+                      
+                   </div><!-- /.grid-item -->
+                   <div class="grid-item grid-box-2">
+                     <a href=""><img src="assets/imgs/box3.jpg" alt=""></a>
+                     <div class="over-layer">
+                      
+                       <a href="assets/imgs/box3.jpg" data-lightbox="models" data-title="Caption2"><i class="bi bi-plus-square"></i></a>
+                      </div><!-- /.over-layer -->
+                   </div><!-- /.grid-item -->
+                   <div class="grid-item grid-box-3">
+                     <a href=""><img src="assets/imgs/box4.jpg" alt=""></a>
+                     <div class="over-layer">
+                      
+                       <a href="assets/imgs/box4.jpg" data-lightbox="models" data-title="Caption3"><i class="bi bi-plus-square"></i></a>
+                      </div><!-- /.over-layer -->
+                   </div><!-- /.grid-item -->
+                   <div class="grid-item grid-box-4">
+                     <a href=""><img src="assets/imgs/box6.jpg" alt=""></a>
+                     <div class="over-layer">
+                      
+                       <a href="assets/imgs/box6.jpg" data-lightbox="models" data-title="Caption4"><i class="bi bi-plus-square"></i></a>
+                      </div><!-- /.over-layer -->
+                   </div><!-- /.grid-item -->
+                   <div class="grid-item grid-box-5">
+                     <a href=""><img src="assets/imgs/box4.jpg" alt=""></a>
+                     <div class="over-layer">
+                      
+                       <a href="assets/imgs/box4.jpg" data-lightbox="models" data-title="Caption5"><i class="bi bi-plus-square"></i></a>
+                      </div><!-- /.over-layer -->
+                   </div><!-- /.grid-item -->
+                   <div class="grid-item grid-box-6">
+                     <a href=""><img src="assets/imgs/box5.jpg" alt=""></a>
+                     <div class="over-layer">
+                      
+                       <a href="assets/imgs/box5.jpg" data-lightbox="models" data-title="Caption6"><i class="bi bi-plus-square"></i></a>
+                      </div><!-- /.over-layer -->
+                   </div><!-- /.grid-item -->
+    
+                 </div><!-- /.grid-parent -->
+    
+    
+    
+               </div>
+               <div class="tab-pane fade" id="pills-video" role="tabpanel" aria-labelledby="pills-video-tab" tabindex="0">
+
+                <div class="grid-parent">
+                  
+                  <div class="grid-item grid-box-1"> 
+                   <iframe class="" width="" height="" data-bs-toggle="" src="https://www.youtube.com/embed/eR37KfMrlqY?si=JiCwJJqN9regXaBT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <a href=""></a>
+                   
+                    <div class="or-layer">
+                     
+                      
+                     </div><!-- /.over-layer -->
+                     
+                  </div><!-- /.grid-item -->
+                  <div class="grid-item grid-box-2"> 
+                    <a href=""><iframe width="" height="" src="https://www.youtube.com/embed/6Ac09GLDkPg?si=K7voUfI_S3ftFe3z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
+                    <div class="o-layer">
+                     
+                      <a href="" data-lightbox="models" data-title="Caption2"></a>
+                     </div><!-- /.over-layer -->
+                  </div><!-- /.grid-item -->
+                  <div class="grid-item grid-box-3"> 
+                    <a href=""><iframe width="" height="" src="https://www.youtube.com/embed/AzLjKj0rCSo?si=PdxJhQ4URNdysw9d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
+                    <div class="o-layer">
+                     
+                      </a>
+                     </div><!-- /.over-layer -->
+                  </div><!-- /.grid-item -->
+                  <div class="grid-item grid-box-4"> 
+                    <a href=""><iframe width="" height="" src="https://www.youtube.com/embed/eR37KfMrlqY?si=JiCwJJqN9regXaBT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
+                    <div class="or-layer">
+                     
+                      </a>
+                     </div><!-- /.over-layer -->
+                  </div><!-- /.grid-item -->
+                  <div class="grid-item grid-box-5"> 
+                    <a href=""><iframe width="" height="" src="https://www.youtube.com/embed/hBlTq88Cchc?si=NDXpzvw5XcbWJCqq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
+                    <div class="or-layer">
+                     
+                      </a>
+                     </div><!-- /.over-layer -->
+                  </div><!-- /.grid-item -->
+                  <div class="grid-item grid-box-6"> 
+                    <a href=""><iframe width="" height="" src="https://www.youtube.com/embed/739VVCdEV4M?si=woQZxxPHGxADQRse" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
+                    <div class="-layer">
+                     
+                     </a>
+                     </div><!-- /.over-layer -->
+                  </div><!-- /.grid-item -->
+
+
+
+
+                  
+   
+                </div><!-- /.grid-parent -->
+   
+   
+   
+               </div>
+              
+             </div>
+             <button type="button" class="btn btn-custom btn-sm w-20 2rem my-5 px-2">LEARN MORE</button></div>
+            
+          </div><!-- /.container -->
+          </div><!-- our-service py-5-->
+    
+      </div>
+      <!-- /.section-gallery -->
+    
+  
+    
+    </div><!-- /.gallery-section -->
+
+      
+
+    <div class="smily-section">
+
+
+      <div class="container">
+
+        <div class="wrapper">
+     
+          <div class="count-box">
+            <img src="assets/imgs/emoji (5).png" alt="">
+           <h2><span class="num" data-val="28">000</span></h2>
+           <h5><span class="text">TEACHER $ STAFF</span></h5>
+  
+  
+          </div><!-- /.count-box -->
+          
+  
+  
+          <div class="count-box">
+            <img src="assets/imgs/emoji (2).png" alt="">
+           <h2><span class="num" data-val="250+">000</span>+</h2>
+           <h5><span class="text">ACTIVE STUDENTS</span></h5>
+  
+  
+  
+          </div><!-- /.count-box -->
+          
+  
+  
+          <div class="count-box">
+            <img src="assets/imgs/emoji (3).png" alt="">
+           <h2><span class="num" data-val="350">000</span>+</h2>
+           <h5><span class="text">SATISFIED PARENTS</span></h5>
+  
+  
+          </div><!-- /.count-box -->
+          
+  
+  
+          <div class="count-box">
+            <img src="assets/imgs/emoji (4).png" alt="">
+           <h2><span class="num" data-val="12">000</span></h2>
+           <h5><span class="text">CLASSES</span></h5>
+  
+  
+          </div><!-- /.count-box -->
+          
+        
+      </div><!-- /.wrapper -->
+        
+
+      </div><!-- /.container -->
+
+    
+      
+    
+    
+  
+    </div><!-- /.smily-section -->
+
+
+
+    <div class="section-miss">
+
+      <div class="our-service py-5"> 
+        <div class="container">
+         <div class="section-lead text-center">
+          <h4>TEACHERS</h4>
+          <li class=" overline ">
+            
+            <div class="right"></div>
+            <div class="icone"><i class="ri-graduation-cap-fill"></i></div>
+            
+            <div class="left"></div>
+            </li>
+          <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit sit amet consectetur adipisicing elit.</p>
+
+
+
+          <div class="owl-carousel owl-theme">
+            <div class="item"><img src="assets/imgs/O-C1.jpg" alt="">
+              <div class="inr-layer">
+                      
+                
+             
+                <h5>AMILY <br> english teacher</h5>
+               
+                
+              </div>
+            </div>
+            <div class="item"><img src="assets/imgs/O-C10.jpg" alt="">
+              <div class="inr-layer">
+                <h5>AMILY <br> maths teacher</h5>
+               
+                
+              </div>
+            </div>
+            <div class="item"><img src="assets/imgs/O-C3.jpg" alt="">
+              <div class="inr-icone">
+                <div class="icone-div">
+                  <li><a href="https://www.facebook.com/login/"><i class="ri-facebook-line"></i></a></li>
+              <li id="pin"><a href="https://www.pinterest.com/"><i class="ri-pinterest-fill" id="pin"></i></a></li>
+  
+              <li><a href="https://twitter.com/i/flow/login"><i class="ri-twitter-fill"></i></a></li>
+              <li><a href="https://www.google.com.pk/"><i class="ri-google-fill"></i></a></li>
+                </div>
+    
+               
+               
+                
+              </div>
+            </div>
+            <div class="item"><img src="assets/imgs/O-C4.jpg" alt="">
+              <div class="inr-layer">
+                <h5>AMILY <br> english teacher</h5>
+               
+                
+              </div>
+            </div>
+            <div class="item"><img src="assets/imgs/O-C5.jpg" alt="">
+              <div class="inr-layer">
+                <h5>AMILY <br> english teacher</h5>
+               
+                
+              </div>
+            </div>
+            <div class="item"><img src="assets/imgs/O-C3.jpg" alt="">
+              <div class="inr-layer">
+                <h5>AMILY <br> english teacher</h5>
+               
+                
+              </div>
+            </div>
+    
+    
+            <div class="item"><img src="assets/imgs/O-C8.jpg" alt="">
+              <div class="inr-layer">
+                <h5>AMILY <br> english teacher</h5>
+               
+                
+              </div>
+            </div>
+    
+    
+            <div class="item"><img src="assets/imgs/O-C7.webp" alt="">
+              <div class="inr-layer">
+                <h5>AMILY <br> english teacher</h5>
+               
+                
+              </div>
+            </div>
+  
+            <div class="item"><img src="assets/imgs/O-C4.jpg" alt="">
+              <div class="inr-layer">
+                <h5>AMILY <br> english teacher</h5>
+               
+                
+              </div>
+            </div>
+  
+  
+            <div class="item"><img src="assets/imgs/O-C6.jpg" alt="">
+              <div class="inr-layer">
+                <h5>AMILY <br> english teacher</h5>
+               
+                
+              </div>
+            </div>
+  
+  
+            <div class="item"><img src="assets/imgs/O-C11.jpg" alt="">
+              <div class="inr-layer">
+                <h5>AMILY <br> english teacher</h5>
+               
+                
+              </div>
+            </div>
+    
+    
+    
+            
+    
+    
+            <div class="item"><img src="assets/imgs/O-C12.jpg" alt="">
+              <div class="inr-icone">
+                <div class="icone-div">
+                  <li><a href="https://www.facebook.com/login/"><i class="ri-facebook-line"></i></a></li>
+              <li id="pin"><a href="https://www.pinterest.com/"><i class="ri-pinterest-fill" id="pin"></i></a></li>
+  
+              <li><a href="https://twitter.com/i/flow/login"><i class="ri-twitter-fill"></i></a></li>
+              <li><a href="https://www.google.com.pk/"><i class="ri-google-fill"></i></a></li>
+                </div>
+            </div>
+          </div>
+        </div>
+  
+
+
+         
+  
+        </div class="container">
+      </div><!-- our-service py-5-->
+
+
+     
+      
+
+      
+       
+    </div><!-- /.section-miss -->
+
+
+
+    <div class="last-three">
+          
+      <div class="our-service py-5"> 
+      <div class="container">
+       <div class="section-lead text-center">
+       <h4>OUR EVENTS</h4>
+       <li class=" overline ">
+      
+       <div class="right"></div>
+       <div class="icone"><i class="ri-graduation-cap-fill"></i></div>
+      
+       <div class="left"></div>
+       </li>
+       <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit sit amet consectetur adipisicing elit.</p>
+
+      </div>
+
+
+
+      <div class="card-parent ">
+
+
+        <div class="card" style="width: 20rem;">
+          <a href=""><img src="assets/imgs/211 feb.jpg" class="card-img-top ="..."></a>
+          <div class="blackover-layer">
+   
+            <a href="assets/imgs/211 feb.jpg" data-lightbox="models" data-title="Caption2"><i class="bi bi-link-45deg"></i></a>
+           </div><!-- /.blackover-layer -->
+          
+           <div class="card-body">
+            <ul>
+             <li>SPORTS DAY</li>
+             <li>21 FEB</li>
+            </ul>
+           <p class="card-text">it is a long established fact are that a will be is distracted by readable content.........</p>
+          </div>
+  
+         </div>
+  
+         <div class="card " style="width: 20rem;">
+          <a href=""><img src="assets/imgs/color day.jpg" class="card-img-top ="..."></a>
+          <div class="blackover-layer">
+   
+            <a href="assets/imgs/color day.jpg" data-lightbox="models" data-title="Caption2"><i class="bi bi-link-45deg"></i></a>
+           </div><!-- /.blackover-layer -->
+            <div class="card-body">
+             <ul>
+              <li>COLORS DAY</li>
+              <li>29 MAR</li>
+             </ul>
+            <p class="card-text">it is a long established fact are that a will be is distracted by readable content.........</p>
+           </div>
+  
+         </div>
+  
+
+         
+            
+        <div class="text-parent">
+
+          <p class="text-start">OUR NEXT EVENTS</p>
+          <p class="text-start lines"></p>
+          <p class="text-center heading">many varieations of passages Lorem, ipsum.</p>
+          <p class="text-end">PARENTS DAY</p>
+          
+          <p class="text-sm-end">20-feb-2024 at 10:00am to 4:00pm</p>
+          <p class="text-md-end">STUDY TOUR</p>
+          <p class="text-lg-end">19-MARCH-2024 TO 21-MARCH-2024</p>
+          <p class="text-xl-end">SUMMER SPORTS</p>
+          <p class="text-xxl-end">25-APRIL TO 29-APRIL</p>
+          <p class="text-md-end">TEACHERS DAY</p>
+          <p class="text-lg-end">17-feb-2024 at 10:00am to 4:00pm</p> 
+
+        </div><!-- /.text-parent -->
+
+      </div><!-- /.card-parent -->
+
+     </div class="container">
+     </div>
+
+   
+    </div><!-- /.last-three -->
+
+ 
+    <div class="parent-say">
+
+      <div class="our-service py-5"> 
+        <div class="container">
+          <div class="section-lead text-center">
+           <h4 class="p-say">WHAT PARENTS SAY</h4>
+           <li class=" overline m-2 ">
+         
+           </li>
+           <p class="p-say"> Lorem, ipsum dolor sit amet consectetur adipisicing elit sit amet consectetur adipisicing elit. </p>
+           
+           
+          </div>
+          
+        </div class="container">
+
+        <p class="p-end ">--MAKSUD REZA</p>
+
+       
+      </div> 
+      
+      
+
+      
+      
+
+    </div><!-- /.parent-say -->
+
+
+
+    <div class="calsess-box">
+
+
+      <div class="our-service py-5"> 
+        <div class="container">
+          <div class="section-lead text-center">
+            <h4>CLASSES</h4>
+            <li class=" overline ">
+        
+              <div class="right"></div>
+              <div class="icone"><i class="ri-graduation-cap-fill"></i></div>
+              
+              <div class="left"></div>
+            </li>
+            <p > Lorem, ipsum dolor sit amet consectetur adipisicing elit sit amet consectetur adipisicing elit.</p>
+            
+          </div>
+
+
+
+          <div class="row row-cols-1 row-cols-md-4 row-cols-lg-4 ">
+            <div class="col row-cols-1 row-cols-md- row-cols-lg-4">
+              <div class="card">
+                <img src="assets/imgs/class1.jpg" class="card-img-top" alt="...">
+                <div class="card-body second">
+                  <h5 class="card-title text-center">LITTIE LAMBS</h5>
+                  <p class="card-text ">
+                    <ul>
+                      <li>Years old</li>
+                      <li>Students/kids</li>
+                      <li>Fees</li>
+                    </ul>
+                    <ul>
+                      <li>3-4</li>
+                      <li>240</li>
+                      <li>270$</li>
+                    </ul>
+                  </p>
+                </div>
+                
+              </div>
+            </div>
+            <div class="col row-cols-1 row-cols-md- row-cols-lg-4">
+              <div class="card ">
+                <img src="assets/imgs/classs 2.jpg" class="card-img-top" alt="...">
+                <div class="card-body second">
+                  <h5 class="card-title text-center">MASTER KIDS</h5>
+                  <p class="card-text"> <ul>
+                    <li>Years old</li>
+                    <li>Students/kids</li>
+                    <li>Fees</li>
+                  </ul>
+                  <ul>
+                    <li>4-5</li>
+                    <li>200</li>
+                    <li>300$</li>
+                  </ul></p>
+                </div>
+                
+              </div>
+            </div>
+            <div class="col row-cols-1 row-cols-md- row-cols-lg-4">
+              <div class="card ">
+                <img src="assets/imgs/class 3.jpg" class="card-img-top" alt="...">
+                <div class="card-body second">
+                  <h5 class="card-title text-center">CREATIVE KIDS</h5>
+                  <p class="card-text"> <ul>
+                    <li>Years old</li>
+                    <li>Students/kids</li>
+                    <li>Fees</li>
+                  </ul>
+                  <ul>
+                    <li>5-6</li>
+                    <li>180</li>
+                    <li>370$</li>
+                  </ul></p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div class="container">
+      </div> 
+
+
+
+      
+      
+      
+
+      
+      
+
+    </div><!-- /.calsess-box -->
+
+
+
+
+
+    <div class="contact-section">
+
+
+      <div class="our-service py-5"> 
+        <div class="container">
+          <div class="section-lead text-center">
+            <h4>QUICK CONTACT</h4>
+            <li class=" overline ">
+        
+              <div class="right"></div>
+              <div class="icone"><i class="ri-graduation-cap-fill"></i></div>
+              
+              <div class="left"></div>
+            </li>
+            <p > Lorem, ipsum dolor sit amet consectetur adipisicing elit sit amet consectetur adipisicing elit.</p>
+            
+          </div>
+
+
+          <div class="box-parnt text-center ">
+            <div class="box-one">
+                <img src="assets/imgs/location.png" alt="">
+                <h4>Our location</h4>
+                <h6>3576 Melrose Streate Avinue</h6>
+                <h6>CA 8076,Australia</h6>
+                
+
+            </div><!-- /.box-one -->
+
+            <div class="box-one text-center">
+                <img src="assets/imgs/phone num book.png" alt="">
+                <h4>Phone Number</h4>
+                <h6>+923456789</h6>
+                <h6>+923456789</h6>
+                
+
+            </div><!-- /.box-one -->
+
+            <div class="box-one text-center">
+                <img src="assets/imgs/email id.png" alt="">
+                <h4>Email ID</h4>
+                <h6>kidschool@gmail.com</h6>
+                <h6>servicekids@gmail.com</h6>
+                
+
+            </div><!-- /.box-one -->
+
+            <div class="box-one text-center">
+                <img src="assets/imgs/watch.png" alt="">
+                <h4>Kidschool Time</h4>
+                <h6>8am to 5pm,MON TO FRI</h6>
+                <h6>9am to 1pm SAT</h6>
+                
+
+            </div><!-- /.box-one -->
+
+        </div><!-- /.box-parnt -->
+
+
+
+         
+        </div class="container">
+      </div> 
+
+
+
+    </div><!-- /.contact-section -->
+
+
+
+    <div class="footer">
+
+      <div class="footer-parent py-3 ">
+        <div class="container">
+          <div class="footer-box1 ">
+           <h2>ABOUT KIDSSCHOOL</h2>
+           <p>Lorem ipsum dolor sit amet consectetur cupiditate porro enim  nulla asperiores nesciunt iure obcaecati neque placeat quod ratione debitis?</p>
+    
+          </div><!-- /.footer-box1 -->
+
+
+          <div class="footer-box2">
+            <h2>CLASSES SECTION</h2>
+            <ul>
+              <li>little lambs</li>
+              <li>Master mind</li>
+              <li>World Round</li>
+              <li>Honter Caves</li>
+            </ul>
+      
+          </div><!-- /.footer-box2 -->
+
+
+
+          <div class="footer-box3 ">
+            <h2>QUCIK LINK</h2>
+            <ul>
+              <li>About Us</li>
+              <li>Class Keyword</li>
+              <li>Contact Us</li>
+              <li>Shortcodes</li>
+            </ul>
+      
+          </div> <!-- /.footer-box3 -->
+
+
+
+          <div class="footer-box4">
+            <h2>NEWS LETTER</h2>
+            <p>Lorem ipsum dolor Lorem, ipsum dolor. ducimus quasi culpa.</p>
+            <input placeholder="Your Email" type="text">
+            <a href=""><button>SUBMIT</button></a>
+      
+          </div><!-- /.footer-box4 -->
+
+
+
+        </div><!-- /.container -->
+      </div>
+      
+     
+      
+
+     <div class="last-footerline">
+        <div class="inner-last">
+          <div class="container">
+            <ul>
+              <li>Copyright@kidschool All Right Reserved</li>
+  
+            </ul>
+            <ul>
+              <li><a href="https://www.facebook.com/login/"><i class="ri-facebook-line"></i></a></li>
+              <li><a href="https://www.pinterest.com/"><i class="ri-pinterest-fill" id="pin"></i></a></li>
+  
+              <li><a href="https://twitter.com/i/flow/login"><i class="ri-twitter-fill"></i></a></li>
+              <li><a href="https://www.google.com.pk/"><i class="ri-google-fill"></i></a></li>
+            </ul>
+  
+          </div><!-- /.container -->
+  
+        </div>
+        <!-- /.inner-last -->
+      </div><!-- /.last-footerline -->
+
+    </div><!-- /.footer -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/lightbox-plus-jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/assets/js/owl.carousel.min.js"></script>
+   <script src="/assets/js/app.js"></script>
+
+   
+  </body>
+</html>
+
+
+
+
+
