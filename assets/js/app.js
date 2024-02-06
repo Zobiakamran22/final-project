@@ -70,7 +70,7 @@ valueDisplays.forEach((valueDisplay) => {
 
 
 
-
+ let owlCarousel = $ (".owlCarousel")
 
 
 
@@ -82,7 +82,6 @@ valueDisplays.forEach((valueDisplay) => {
       autoplay:true,
       items:3,
       pullDrag:false,
-    //   autoWidth:false,
       autoplayHoverPause:true,
      
     
@@ -91,15 +90,14 @@ valueDisplays.forEach((valueDisplay) => {
             items:4,
             nav:true,
             loop:true,
-            // autoWidth:false,
+            
            
         },
         600:{
             items:4,
             nav:true,
             loop:true,
-            // autoWidth:false,
-         
+           
            
         },
         1000:{
@@ -107,7 +105,7 @@ valueDisplays.forEach((valueDisplay) => {
             items:4,
             nav:true,
             loop:true,
-            // autoWidth:false,
+           
          
         
         },
